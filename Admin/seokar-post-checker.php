@@ -111,3 +111,4 @@ function seokar_show_validation_error_notice() {
     }
 }
 add_action('admin_notices', 'seokar_show_validation_error_notice');
+?>

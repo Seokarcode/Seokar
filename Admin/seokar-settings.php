@@ -42,3 +42,4 @@ function seokar_option_cb() {
     $value = get_option('seokar_option');
     echo '<input type="text" name="seokar_option" value="' . esc_attr($value) . '">';
 }
+?>

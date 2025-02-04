@@ -7,3 +7,4 @@ function seokar_enqueue_assets() {
     wp_enqueue_script('seokar-scripts', plugin_dir_url(__FILE__) . '../assets/js/seokar-scripts.js', array('jquery'), false, true);
 }
 add_action('admin_enqueue_scripts', 'seokar_enqueue_assets');
+?>

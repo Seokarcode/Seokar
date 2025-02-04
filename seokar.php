@@ -1,10 +1,10 @@
 <?php
 /*
  * Plugin Name: Seokar
- * Description: A comprehensive SEO plugin with various functionalities.
- * Version: 1.0.0
- * Author: Sajjadakbari
- * Text Domain: sajjadakbari.ir
+ * Description: A comprehensive SEO plugin with various functionalities including image optimization, post publication checks, and external link annotation.
+ * Version: 1.2.0
+ * Author: Seokarcode
+ * Text Domain: seokar
  */
 
 // Exit if accessed directly
@@ -21,7 +21,7 @@ require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-dashboard.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-settings.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-image-optimizer.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-post-checker.php';
-require_once SEOKAR_PLUGIN_PATH . 'admin/seokar/References-link.php';
+require_once SEOKAR_PLUGIN_PATH . 'includes/seokar-link-annotator.php';
 
 // Add top-level menu and submenus
 function seokar_add_admin_menu() {
@@ -58,8 +58,8 @@ function seokar_add_admin_menu() {
         'بهینه‌سازی تصاویر',         // Menu title
         'manage_options',             // Capability
         'seokar-image-optimizer',     // Menu slug
-        'seokar_image_optimizer_page', // Function to display page
-        'references-link'             //add references link post
+        'seokar_image_optimizer_page' // Function to display page
     );
 }
 add_action('admin_menu', 'seokar_add_admin_menu');
+?>

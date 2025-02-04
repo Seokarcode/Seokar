@@ -102,3 +102,4 @@ function seokar_convert_image_format($image_path, $format, $keep_original, $opti
         }
     }
 }
+?>

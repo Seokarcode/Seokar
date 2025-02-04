@@ -20,6 +20,7 @@ require_once SEOKAR_PLUGIN_PATH . 'includes/seokar-functions.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-dashboard.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-settings.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-image-optimizer.php';
+require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-post-checker.php';
 
 // Add top-level menu and submenus
 function seokar_add_admin_menu() {

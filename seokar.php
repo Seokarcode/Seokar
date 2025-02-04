@@ -21,6 +21,7 @@ require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-dashboard.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-settings.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-image-optimizer.php';
 require_once SEOKAR_PLUGIN_PATH . 'admin/seokar-post-checker.php';
+require_once SEOKAR_PLUGIN_PATH . 'admin/seokar/References-link.php';
 
 // Add top-level menu and submenus
 function seokar_add_admin_menu() {
@@ -57,7 +58,8 @@ function seokar_add_admin_menu() {
         'بهینه‌سازی تصاویر',         // Menu title
         'manage_options',             // Capability
         'seokar-image-optimizer',     // Menu slug
-        'seokar_image_optimizer_page' // Function to display page
+        'seokar_image_optimizer_page', // Function to display page
+        'references-link'             //add references link post
     );
 }
 add_action('admin_menu', 'seokar_add_admin_menu');
